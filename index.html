@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Codificación de carácteres para acentos o carácteres especiales como la ñ. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Moreno</title>
+
+    <!-- Descripción -->
+    <meta name="description"
+        content="Explora el portfolio de [tu nombre], un/a [tu profesión] especializado/a en [especialidad]. Proyectos innovadores de diseño web, desarrollo de aplicaciones y más.">
+
+    <!-- Palabras clave SEO -->
+    <meta name="keywords"
+        content="portfolio, diseño web, desarrollo web, UX/UI, desarrollador frontend, desarrollador backend, diseño gráfico, aplicaciones móviles, portfolio de diseñador, trabajos de diseño">
+
+    <!-- Autores -->
+    <meta name="author" content="Tu nombre o el nombre de tu empresa">
+
+    <!-- Open Graph (para redes sociales) -->
+    <meta property="og:title" content="Mi Portfolio | Nombre del Diseñador/Desarrollador">
+    <meta property="og:description"
+        content="Descubre los proyectos y trabajos de [tu nombre], un/a profesional de [tu especialidad].">
+    <meta property="og:image" content="URL_de_tu_imagen_de_cobertura.jpg">
+    <meta property="og:url" content="URL_de_tu_portfolio.com">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Canonical link (evita contenido duplicado) -->
+    <link rel="canonical" href="URL_de_tu_portfolio.com">
+
+    <!-- Optimización para motores de búsqueda (si es necesario) -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Otros metadatos importantes -->
+    <meta name="theme-color" content="#ff5733">
+
+    <!-- 11. CSS externo: Aplicar estilos mediante un archivo CSS externo. -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="css/temas.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/galeria.js"></script>
+</head>
+
+<body>
+    <header>
+        <!--  1. Menú de navegación: Debe permitir la navegación entre las diferentes secciones del
+sitio. BIEN -->
+        <!-- 8. Responsive design: Utilizar Flexbox y/o Grid para asegurar que el sitio sea responsive. -->
+        <nav class="navbar">
+            <div class="logo">Portfolio Moreno</div>
+            <!-- 2. Listas ordenadas, desordenadas y anidadas: Incluir al menos una lista de cada tipo.
+Incluir listas dentro de otras listas. -->
+            <!-- Lista desordenada-->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li class="dropdown">
+                    <a href="#proyectos">Proyectos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="dropdown-icon" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 .4.8l-6 7a.5.5 0 0 1-.8 0l-6-7A.5.5 0 0 1 1.5 5z" />
+                        </svg>
+                    </a>
+                    <!-- Lista anidada-->
+                    <ul class="dropdown-menu">
+                        <li><a href="#proyecto1">Proyecto de vida</a></li>
+                        <li><a href="#proyecto2">Proyecto de twitch</a></li>
+                        <li><a href="#proyecto3">Proyecto de innovación</a></li>
+                    </ul>
+                </li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="./pages/contact.html">Contacto</a></li>
+            </ul>
+            <!-- Botón hamburguesa -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 7. Galería de imágenes animada con JavaScript: Crear una galería que muestre imágenes
+de manera animada. -->
+    <div class="carousel" id="carousel">
+        <!-- Imágenes -->
+        <div class="carousel-inner">
+            <div class="carousel-item"><img src="./images/1.webp" alt="Imagen 1"></div>
+            <div class="carousel-item"><img src="./images/2.webp" alt="Imagen 2"></div>
+            <div class="carousel-item"><img src="./images/3.webp" alt="Imagen 3"></div>
+        </div>
+
+        <!-- Controles -->
+        <div class="carousel-controls">
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+        </div>
+
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+            <button class="active" data-slide="0"></button>
+            <button data-slide="1"></button>
+            <button data-slide="2"></button>
+        </div>
+    </div>
+
+
+
+    <!-- 10. Etiquetas semánticas: Utilizar adecuadamente las etiquetas semánticas de HTML5. -->
+    <!-- 15. Validación: Verificar la corrección sintáctica de los ficheros html y css mediante el
+validador de W3C. -->
+    <!-- Sección de vídeo -->
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <div class="fotomoreno">
+            <!-- 4. Imágenes: Incluir al menos una imagen en el sitio. -->
+            <img src="./images/Moreno.jpg" alt="Fotografía de Moreno con traje">
+            <p> Actualmente estoy adquiriendo una base enriquecedora en
+                el mundo de la tecnología especialmente en la
+                programación, para destacar en uno de los sectores más
+                importantes.
+                Durante mi trayectoria laboral me he forjado un camino en
+                varios sectores; desde el área fiscal como técnico contable
+                en Afianza, hasta el sector educativo, donde desarrollé
+                habilidades para el trabajo en equipo y la comunicación
+                efectiva.
+                De cara al futuro aspiro a consolidar mis conocimientos en
+                el sector tecnológico y aplicarlos para destacar en un
+                entorno evolutivo. Con el objetivo de destacar en uno de
+                los sectores más dinámicos y en constante evolución. Mi
+                meta es aportar valor mediante ideas innovadores y estar
+                en continuo aprendizaje.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat velit temporibus, non magnam ducimus similique culpa nostrum quisquam perspiciatis optio odio vero. Rerum necessitatibus alias assumenda delectus. Labore, illum eum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic exercitationem unde reprehenderit vel incidunt similique at est quis consequuntur corrupti error maiores qui natus autem sunt eligendi aperiam consequatur rem nobis, ipsa doloribus dignissimos. Ad omnis, veniam magni aperiam, deserunt nam, recusandae facere quisquam sapiente accusamus qui dolorem. Expedita vel doloremque quidem, velit excepturi in. Eaque, modi consequatur laudantium dolorem aliquid nemo earum dolor animi error? Assumenda exercitationem, illum fugit obcaecati quod reiciendis magni tempore quibusdam totam nihil ut enim numquam eum dolores sit officiis sequi alias, sunt quos perspiciatis at, minima adipisci nulla. Doloribus cumque cum veritatis accusantium voluptatem quia harum, maxime ipsum ratione nobis minus voluptate. Odio, soluta, quae deserunt numquam ipsum vero, ut provident libero tempora repellendus repudiandae necessitatibus delectus enim facilis minus accusantium ad nemo illo magnam veritatis impedit possimus. Perspiciatis rerum beatae rem praesentium nam maiores aliquid totam eaque ullam? Minus laudantium repellendus, cupiditate quasi porro corporis officiis reprehenderit quos fuga. Saepe, sit? Consequatur earum voluptas vitae provident saepe perferendis voluptatibus, culpa reprehenderit eveniet officiis ratione veritatis dicta explicabo quaerat ad corrupti? Aut esse totam at harum, nam ut similique quidem ex impedit reiciendis deleniti maxime pariatur illo odio, blanditiis labore voluptatum placeat exercitationem odit accusantium perferendis! Ratione at eligendi dolor asperiores cumque ducimus consequuntur, quis iure vitae ex. Cupiditate corrupti, dignissimos itaque suscipit quia natus alias quaerat consequuntur neque eveniet! Quibusdam, sit cumque provident repellendus culpa molestias dolores quasi. Similique tempora nesciunt dolore voluptates voluptate aliquam cum vero ratione explicabo architecto? Tenetur pariatur, odio suscipit quaerat iste explicabo consequuntur non velit natus veritatis et. Natus animi consequuntur deleniti inventore vel ratione, itaque, fugiat, nobis nulla dolor excepturi quas nesciunt! Quibusdam sint dolore odio molestias eius dolorum sed. Beatae debitis pariatur exercitationem laboriosam non earum molestiae adipisci itaque minima quia? Impedit veritatis obcaecati quisquam quae.
+            </p>
+                
+        </div>
+    </section>
+    <!-- Sección de vídeo -->
+    <div class="parallax auroraboreal">
+        <h2>Hobbies</h2>
+        <section id="hobbies">
+
+            <div class="wrapper">
+                <ol>
+                    <li>Bibliofilia y lectura de cómics.</li>
+                    <li>Navegar por internet.</li>
+                    <li>Mindfulness.</li>
+                    <li>Senderismo.</li>
+                </ol>
+            </div>
+        </section>
+    </div>
+    <!-- Sección de vídeo -->
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre del proyecto</th>
+                    <th>Detalles</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="proyecto1">
+                    <td rowspan="2">Proyecto de vida.</td>
+                    <td>Agenda con todo apuntado de los conocimientos y apuntes por los que he estado interesado todo
+                        este
+                        tiempo.</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>Seguimos con las pasiones presentes, mi evolución hasta ahora y los caminos que quiero seguir
+                        explorando.</td>
+                    <td>2024</td>
+                </tr>
+                <tr id="proyecto2">
+                    <td>Proyecto de Twitch</td>
+                    <td>Canal de redes sociales en la plataforma de Twitch, para hacer streaming y reporte de ciertos
+                        juegos.</td>
+                    <td>2023</td>
+                </tr>
+                <tr id="proyecto3">
+                    <td colspan="3" class="centrado">Proyecto de innovación. En proceso de crearse...</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- Sección de vídeo -->
+    <!-- 3. Tabla con columnas y celdas expandidas: Crear una tabla de visualización de datos que
+utilice colspan y rowspan. -->
+    <div class="parallax nebulosa">
+        <h2>Habilidades</h2>
+        <section id="habilidades">
+            <div class="card">
+                <div class="card-header">
+                    <img src="./images/Cda.webp" alt="">
+                </div>
+                <div class="card-body">
+                    <span>Capacidad de análisis</span>
+                    <hr>
+                    <p>Habilidad para descomponer problemas complejos en partes más manejables, identificar patrones,
+                        evaluar datos y proponer soluciones eficaces basadas en razonamientos lógicos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="./images/Cib.webp" alt="">
+                </div>
+                <div class="card-body">
+                    <span>Ciberseguridad</span>
+                    <hr>
+                    <p>Conjunto de prácticas y tecnologías destinadas a proteger sistemas, redes y datos contra accesos
+                        no autorizados, ataques o daños, garantizando la privacidad y la integridad de la información.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="./images/Teq.webp" alt="">
+                </div>
+                <div class="card-body">
+                    <span>Trabajo en equipo</span>
+                    <hr>
+                    <p>Capacidad para colaborar de manera efectiva con otras personas, combinando habilidades,
+                        conocimientos y esfuerzos para alcanzar objetivos comunes.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="./images/Ada.webp" alt="">
+                </div>
+                <div class="card-body">
+                    <span>Actitud de aprendizaje</span>
+                    <hr>
+                    <p>Disposición activa para adquirir nuevos conocimientos, adaptarse a cambios y mejorar
+                        continuamente a través de la curiosidad y la reflexión.</p>
+                </div>
+            </div>
+            <!-- <div class="card">Ciberseguridad.</div>
+        <div class="card">Trabajo en equipo.</div>
+        <div class="card">Actitud de aprendizaje constante.</div> -->
+        </section>
+    </div>
+    <!-- 5. Vídeo incrustado: Incluir un vídeo que se pueda reproducir directamente en la página. -->
+    <section id="video">
+        <h2>Vídeo incrustado</h2>
+        <p>Ejemplo de Hello World en javascript.</p>
+        <video width="320" height="240" controls>
+            <source src="./videos/videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <footer>
+        <div>
+            <p>Copyright &copy; 2025 Todos los derechos reservados por
+                <a href="#about">SkorpLethal</a>.
+            </p>
+        </div>
+        <div class="social-icons">
+            <img src="./images/icons8-facebook-48.png" alt="">
+            <img src="./images/icons8-instagram-48.png" alt="">
+            <img src="./images/icons8-linkedin-48.png" alt="">
+            <img src="./images/icons8-twitter-48.png" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>

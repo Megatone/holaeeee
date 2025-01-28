@@ -1,0 +1,64 @@
+
+/* Media Query: Tema claro u oscuro */
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+  
+    header {
+      background: #1e1e1e;
+      color: #fff;
+    }
+  
+    header nav ul li a {
+      color: #80ff80;
+    }
+  
+    .hero {
+      background-color: #333;
+      color: #f0f0f0;
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    body {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  
+    header {
+      background: #f5f5f5;
+      color: #333;
+    }
+  
+    header nav ul li a {
+      color: #007bff;
+    }
+  }
+  
+  /* Media Query: Adaptación para la impresora */
+  @media print {
+    body {
+      color: #000;
+      background: #fff;
+    }
+  
+    header, footer, .hero {
+      display: none;
+    }
+  
+    .productos h2 {
+      margin-top: 0;
+    }
+  
+    .productoimg {
+      width: 100px;
+      height: auto;
+    }
+  
+    .contacto form {
+      border: 1px solid #000;
+      padding: 1rem;
+    }
+  }

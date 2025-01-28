@@ -1,0 +1,412 @@
+/* Box-sizing por defecto para todos los elementos */
+*,
+*::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Eliminar márgenes y padding por defecto */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Tipografía consistente */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* Mejora el renderizado de fuentes */
+}
+
+/* Evitar desbordamiento horizontal */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Configuración de elementos multimedia */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Eliminar estilos de lista por defecto */
+ul {
+    list-style: none;
+}
+
+/* Estilo por defecto para enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Botones por defecto */
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+/* Heredar tipografía en formularios */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Evitar el borde azul en algunos navegadores */
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
+/* Eliminar bordes adicionales en botones en algunos navegadores */
+button {
+    border: none;
+    background: none;
+}
+
+/* Quitar apariencia nativa de textarea */
+textarea {
+    resize: none;
+}
+
+/* Normalizar tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Compatibilidad para elementos ocultos */
+[hidden] {
+    display: none;
+}
+
+/* Añadir desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Definir la fuente regular */
+@font-face {
+    font-family: 'Merriweather';
+    src: url('fonts/merriweather-regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Definir la fuente en negrita */
+@font-face {
+    font-family: 'Merriweather';
+    src: url('fonts/merriweather-bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Usar la fuente en el cuerpo del sitio */
+body {
+    font-family: 'Merriweather', serif;
+    background-color: rgb(48, 102, 190);
+}
+
+/* Usar la fuente en negrita para los títulos */
+h1,
+h2,
+h3,
+.bold-text {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#slider {
+    height: 1500px;
+}
+
+#about {
+    padding: 1em;
+    margin: 1em;
+}
+
+#about .fotomoreno {
+    display: flex;
+}
+
+#about img {
+    width: 500px;
+    border-radius: 5px;
+}
+
+#about p {
+    margin-left: 2em;
+}
+
+#video video {
+    margin: 1em auto;
+}
+
+#video {
+    text-align: center;
+}
+
+#video p{
+    font-size: 2em;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato|Bree+Serif);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    text-align: left;
+    margin: 2em auto;
+    width: 90%;
+    max-width: 1000px;
+    color: white;
+}
+
+ol {
+    counter-reset: li;
+    margin: 0;
+    padding: 0;
+}
+
+ol>li {
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+    list-style: none;
+    margin: 0 0 .5em 1.95em;
+    padding: .5em 1em;
+    position: relative;
+}
+
+ol>li:before {
+    background: white;
+    color: rgb(48, 102, 190);
+    content: counter(li);
+    counter-increment: li;
+    font-family: "Bree Serif", serif;
+    font-size: 1.2em;
+    line-height: 1em;
+    padding: .5em 0;
+    position: absolute;
+    top: .4em;
+    left: -1.6em;
+    text-align: center;
+    width: 2em;
+}
+
+#hobbies {
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.parallax {
+    /* Altura de la sección con el efecto */
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* Necesario para posicionar el contenido dentro */
+    overflow: hidden;
+}
+
+.parallax.auroraboreal {
+    background-image: url("../images/aurora-boreal.webp");
+    /* Reemplaza con tu imagen */
+}
+
+.parallax.nebulosa {
+    background-image: url("../images/Nebulosa.jpg");
+    /* Reemplaza con tu imagen */
+}
+
+.parallax h2 {
+    background: rgb(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Sección de contenido */
+#habilidades {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    position: absolute;
+    /* Flota dentro del parallax */
+    top: 50%;
+    /* Centrado vertical */
+    left: 50%;
+    /* Centrado horizontal */
+    transform: translate(-50%, -50%);
+    /* Ajusta el centro exacto */
+    color: white;
+    /* Color del texto */
+    padding: 20px 40px;
+    /* Espaciado interno */
+    text-align: center;
+    animation: float 3s ease-in-out infinite;
+    /* Animación flotante */
+}
+
+.card {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 25%;
+    background: rgb(0, 0, 0, 0.5)
+}
+
+.card-header img {
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 1em 0.5em;
+}
+
+.card-body span {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.card-body hr {
+    margin: 1em 0;
+}
+
+/* Animación de flotación */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(-50%, -52%);
+        /* Ligeramente hacia arriba */
+    }
+
+    50% {
+        transform: translate(-50%, -48%);
+        /* Ligeramente hacia abajo */
+    }
+}
+
+thead tr th {
+    text-align: left;
+}
+
+#proyectos {
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+    padding: 0 0 8em 0;
+}
+
+#proyectos th h1 {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    color: #185875;
+}
+
+#proyectos td {
+    font-weight: normal;
+    font-size: 1em;
+    -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+    -moz-box-shadow: 0 2px 2px -2px #0E1119;
+    box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+#proyectos .centrado{
+    text-align: center;
+}
+
+#proyectos th:last-child, 
+td:last-child{
+    width: 10%;
+}
+
+#proyectos {
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+    padding: 0 0 8em 0;
+}
+
+h2{
+    margin-top: 1em;
+}
+
+#proyectos td,
+#proyectos th {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 2%;
+    color: white;
+}
+
+#proyectos th {
+    background-color: rgb(48, 102, 190);
+}
+
+/* Background-color of the odd rows */
+#proyectos tr:nth-child(odd) {
+    background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+#proyectos tr:nth-child(even) {
+    background-color: #2C3446;
+}
+
+#proyectos td img {
+    width: 75px;
+}
+
+#proyectos th.details {
+    width: 30%;
+}
+
+#proyectos th.date {
+    width: 10%;
+}

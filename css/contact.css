@@ -1,0 +1,49 @@
+.form-group{
+    margin-bottom: 1em;
+}
+form{
+    padding: 1em;
+}
+#btnEnviar {
+    background-color: white; /* Fondo blanco */
+    color: rgb(48, 102, 190); /* Texto azul */
+    border: 2px solid rgb(48, 102, 190); /* Borde azul */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Puntero al pasar sobre el botón */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+#btnEnviar:hover {
+    background-color: rgb(91 141 223); /* Fondo azul al pasar el ratón */
+    color: white; /* Texto blanco al pasar el ratón */
+    border: 2px solid white; /*Borde blanco*/
+}
+form label{
+    color: white;
+}
+h2{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}

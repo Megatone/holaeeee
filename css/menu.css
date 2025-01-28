@@ -1,0 +1,121 @@
+header {
+    width: 100%;
+    background: rgb(48, 102, 190);
+    color: white;
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgb(48, 102, 190);
+    color: white;
+    position: relative;
+    z-index: 1000; /* Más alto que el carrusel */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 8px 12px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: rgb(48, 102, 190);
+    border-radius: 5px;
+}
+
+.nav-links a svg {
+    width: 10px;
+    display: inline;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+/* 9. Media queries: Implementar al menos tres de los siguientes tipos de media queries:
+ Tamaño de pantalla. */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        width: 100%;
+        background: rgb(48, 102, 190);
+        padding: 10px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+
+
+/* Estilo para el contenedor del desplegable */
+.nav-links .dropdown {
+    position: relative;
+}
+
+/* Ocultar el menú desplegable por defecto */
+.nav-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.nav-links .dropdown-menu li a {
+    text-decoration: none;
+    padding: 1em;
+    background-color: rgb(48, 102, 190); /* Cambia el color de fondo según tu diseño */
+    color: white; /* Cambia el color del texto según tu diseño */
+    display: block;
+    width: 100%;
+}
+
+/* Cambiar el color de fondo al pasar el mouse */
+.nav-links .dropdown-menu li a:hover {
+    background-color: #f0f0f0; /* Cambia el color de fondo según tu diseño */
+    color: rgb(48, 102, 190);
+}
+
+
+/* Mostrar el menú desplegable al pasar el mouse */
+.nav-links .dropdown:hover .dropdown-menu {
+    display: block;
+}
+

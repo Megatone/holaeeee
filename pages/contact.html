@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Codificación de carácteres para acentos o carácteres especiales como la ñ. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Moreno</title>
+
+    <!-- Descripción -->
+    <meta name="description"
+        content="Explora el portfolio de [tu nombre], un/a [tu profesión] especializado/a en [especialidad]. Proyectos innovadores de diseño web, desarrollo de aplicaciones y más.">
+
+    <!-- Palabras clave SEO -->
+    <meta name="keywords"
+        content="portfolio, diseño web, desarrollo web, UX/UI, desarrollador frontend, desarrollador backend, diseño gráfico, aplicaciones móviles, portfolio de diseñador, trabajos de diseño">
+
+    <!-- Autores -->
+    <meta name="author" content="Tu nombre o el nombre de tu empresa">
+
+    <!-- Open Graph (para redes sociales) -->
+    <meta property="og:title" content="Mi Portfolio | Nombre del Diseñador/Desarrollador">
+    <meta property="og:description"
+        content="Descubre los proyectos y trabajos de [tu nombre], un/a profesional de [tu especialidad].">
+    <meta property="og:image" content="URL_de_tu_imagen_de_cobertura.jpg">
+    <meta property="og:url" content="URL_de_tu_portfolio.com">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Canonical link (evita contenido duplicado) -->
+    <link rel="canonical" href="URL_de_tu_portfolio.com">
+
+    <!-- Optimización para motores de búsqueda (si es necesario) -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Otros metadatos importantes -->
+    <meta name="theme-color" content="#ff5733">
+
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/contact.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio Moreno</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#about">Sobre mí</a></li>
+                <li><a href="../index.html#hobbies">Hobbies</a></li>
+                <li><a href="../index.html#proyectos">Proyectos</a></li>
+                <li><a href="../index.html#habilidades">Habilidades</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+            <!-- Botón hamburguesa -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Formulario de contacto</h2>
+        <!-- 6. Formulario de contacto con JavaScript: Debe tener, al menos, los campos tradicionales
+(nombre, correo electrónico, mensaje), un sistema de validación de datos y variaciones
+en función de alguno de los datos. -->
+    <form onsubmit="return validarFormulario()">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Escriba su email">
+        </div>
+        <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" class="form-control" id="asunto"
+                placeholder="Escriba el motivo por el cuál desea contactarme.">
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" class="form-control" id="mensaje" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn" id="btnEnviar">Enviar</button>
+    </form>
+    </div>
+    <footer>
+        <div>
+            <p>Copyright &copy; 2025 Todos los derechos reservados por
+                <a href="#about">SkorpLethal</a>.
+            </p>
+        </div>
+        <div class="social-icons">
+            <img src="./images/icons8-facebook-48.png" alt="">
+            <img src="./images/icons8-instagram-48.png" alt="">
+            <img src="./images/icons8-linkedin-48.png" alt="">
+            <img src="./images/icons8-twitter-48.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>
