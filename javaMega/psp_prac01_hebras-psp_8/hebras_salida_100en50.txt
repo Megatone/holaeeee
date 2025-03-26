@@ -1,0 +1,876 @@
+000A FUERA	Entrando	aforo: 0
+	Dentro: []
+	Cola entrada: []
+	Cola salida: []
+111B FUERA	Entrando	aforo: 1
+	Dentro: [000A]
+	Cola entrada: []
+	Cola salida: []
+000A ENTRANDO	Ha entrado	aforo: 2
+	Dentro: [000A, 111B]
+	Cola entrada: []
+	Cola salida: []
+111B ENTRANDO	Ha entrado	aforo: 2
+	Dentro: [000A, 111B]
+	Cola entrada: []
+	Cola salida: []
+222C FUERA	Entrando	aforo: 2
+	Dentro: [000A, 111B]
+	Cola entrada: []
+	Cola salida: []
+333D FUERA	Entrando	aforo: 3
+	Dentro: [000A, 111B, 222C]
+	Cola entrada: []
+	Cola salida: []
+333D ENTRANDO	Ha entrado	aforo: 4
+	Dentro: [000A, 111B, 222C, 333D]
+	Cola entrada: []
+	Cola salida: []
+444E FUERA	Entrando	aforo: 4
+	Dentro: [000A, 111B, 222C, 333D]
+	Cola entrada: []
+	Cola salida: []
+222C ENTRANDO	Ha entrado	aforo: 5
+	Dentro: [000A, 111B, 222C, 333D, 444E]
+	Cola entrada: []
+	Cola salida: []
+000A BAILANDO esperando...
+444E ENTRANDO	Ha entrado	aforo: 5
+	Dentro: [000A, 111B, 222C, 333D, 444E]
+	Cola entrada: []
+	Cola salida: [000A BAILANDO]
+000A BAILANDO	Saliendo	aforo: 5
+	Dentro: [000A, 111B, 222C, 333D, 444E]
+	Cola entrada: []
+	Cola salida: []
+000A SALIENDO	Ha salido	aforo: 4
+	Dentro: [111B, 222C, 333D, 444E]
+	Cola entrada: []
+	Cola salida: []
+333D BAILANDO	Saliendo	aforo: 4
+	Dentro: [111B, 222C, 333D, 444E]
+	Cola entrada: []
+	Cola salida: []
+555F FUERA esperando...
+666G FUERA esperando...
+777H FUERA esperando...
+333D SALIENDO	Ha salido	aforo: 3
+	Dentro: [111B, 222C, 444E]
+	Cola entrada: [555F FUERA, 666G FUERA, 777H FUERA]
+	Cola salida: []
+777H FUERA esperando...
+555F FUERA	Entrando	aforo: 3
+	Dentro: [111B, 222C, 444E]
+	Cola entrada: [666G FUERA, 777H FUERA]
+	Cola salida: []
+666G FUERA	Entrando	aforo: 4
+	Dentro: [111B, 222C, 444E, 555F]
+	Cola entrada: [777H FUERA]
+	Cola salida: []
+555F ENTRANDO	Ha entrado	aforo: 5
+	Dentro: [111B, 222C, 444E, 555F, 666G]
+	Cola entrada: [777H FUERA]
+	Cola salida: []
+777H FUERA	Entrando	aforo: 5
+	Dentro: [111B, 222C, 444E, 555F, 666G]
+	Cola entrada: []
+	Cola salida: []
+666G ENTRANDO	Ha entrado	aforo: 6
+	Dentro: [111B, 222C, 444E, 555F, 666G, 777H]
+	Cola entrada: []
+	Cola salida: []
+777H ENTRANDO	Ha entrado	aforo: 6
+	Dentro: [111B, 222C, 444E, 555F, 666G, 777H]
+	Cola entrada: []
+	Cola salida: []
+888I FUERA	Entrando	aforo: 6
+	Dentro: [111B, 222C, 444E, 555F, 666G, 777H]
+	Cola entrada: []
+	Cola salida: []
+888I ENTRANDO	Ha entrado	aforo: 7
+	Dentro: [111B, 222C, 444E, 555F, 666G, 777H, 888I]
+	Cola entrada: []
+	Cola salida: []
+111B BAILANDO	Saliendo	aforo: 7
+	Dentro: [111B, 222C, 444E, 555F, 666G, 777H, 888I]
+	Cola entrada: []
+	Cola salida: []
+111B SALIENDO	Ha salido	aforo: 6
+	Dentro: [222C, 444E, 555F, 666G, 777H, 888I]
+	Cola entrada: []
+	Cola salida: []
+999J FUERA	Entrando	aforo: 6
+	Dentro: [222C, 444E, 555F, 666G, 777H, 888I]
+	Cola entrada: []
+	Cola salida: []
+555F BAILANDO esperando...
+888I BAILANDO esperando...
+101010K FUERA esperando...
+111111L FUERA esperando...
+999J ENTRANDO	Ha entrado	aforo: 7
+	Dentro: [222C, 444E, 555F, 666G, 777H, 888I, 999J]
+	Cola entrada: [101010K FUERA, 111111L FUERA]
+	Cola salida: [555F BAILANDO, 888I BAILANDO]
+111111L FUERA esperando...
+101010K FUERA esperando...
+555F BAILANDO	Saliendo	aforo: 7
+	Dentro: [222C, 444E, 555F, 666G, 777H, 888I, 999J]
+	Cola entrada: [101010K FUERA, 111111L FUERA]
+	Cola salida: [888I BAILANDO]
+888I BAILANDO	Saliendo	aforo: 7
+	Dentro: [222C, 444E, 666G, 777H, 888I, 999J]
+	Cola entrada: [101010K FUERA, 111111L FUERA]
+	Cola salida: []
+222C BAILANDO	Saliendo	aforo: 7
+	Dentro: [222C, 444E, 666G, 777H, 999J]
+	Cola entrada: [101010K FUERA, 111111L FUERA]
+	Cola salida: []
+222C SALIENDO	Ha salido	aforo: 6
+	Dentro: [444E, 666G, 777H, 999J]
+	Cola entrada: [101010K FUERA, 111111L FUERA]
+	Cola salida: []
+111111L FUERA esperando...
+101010K FUERA esperando...
+121212M FUERA esperando...
+555F SALIENDO	Ha salido	aforo: 5
+	Dentro: [444E, 666G, 777H, 999J]
+	Cola entrada: [101010K FUERA, 111111L FUERA, 121212M FUERA]
+	Cola salida: []
+111111L FUERA esperando...
+121212M FUERA esperando...
+101010K FUERA esperando...
+888I SALIENDO	Ha salido	aforo: 4
+	Dentro: [444E, 666G, 777H, 999J]
+	Cola entrada: [101010K FUERA, 111111L FUERA, 121212M FUERA]
+	Cola salida: []
+111111L FUERA esperando...
+101010K FUERA	Entrando	aforo: 4
+	Dentro: [444E, 666G, 777H, 999J]
+	Cola entrada: [111111L FUERA, 121212M FUERA]
+	Cola salida: []
+121212M FUERA esperando...
+101010K ENTRANDO	Ha entrado	aforo: 5
+	Dentro: [444E, 666G, 777H, 999J, 101010K]
+	Cola entrada: [111111L FUERA, 121212M FUERA]
+	Cola salida: []
+111111L FUERA	Entrando	aforo: 5
+	Dentro: [444E, 666G, 777H, 999J, 101010K]
+	Cola entrada: [121212M FUERA]
+	Cola salida: []
+121212M FUERA	Entrando	aforo: 6
+	Dentro: [444E, 666G, 777H, 999J, 101010K, 111111L]
+	Cola entrada: []
+	Cola salida: []
+111111L ENTRANDO	Ha entrado	aforo: 7
+	Dentro: [444E, 666G, 777H, 999J, 101010K, 111111L, 121212M]
+	Cola entrada: []
+	Cola salida: []
+111111L BAILANDO esperando...
+131313N FUERA esperando...
+121212M ENTRANDO	Ha entrado	aforo: 7
+	Dentro: [444E, 666G, 777H, 999J, 101010K, 111111L, 121212M]
+	Cola entrada: [131313N FUERA]
+	Cola salida: [111111L BAILANDO]
+131313N FUERA esperando...
+111111L BAILANDO	Saliendo	aforo: 7
+	Dentro: [444E, 666G, 777H, 999J, 101010K, 111111L, 121212M]
+	Cola entrada: [131313N FUERA]
+	Cola salida: []
+777H BAILANDO	Saliendo	aforo: 7
+	Dentro: [444E, 666G, 777H, 999J, 101010K, 121212M]
+	Cola entrada: [131313N FUERA]
+	Cola salida: []
+444E BAILANDO	Saliendo	aforo: 7
+	Dentro: [444E, 666G, 999J, 101010K, 121212M]
+	Cola entrada: [131313N FUERA]
+	Cola salida: []
+444E SALIENDO	Ha salido	aforo: 6
+	Dentro: [666G, 999J, 101010K, 121212M]
+	Cola entrada: [131313N FUERA]
+	Cola salida: []
+131313N FUERA esperando...
+777H SALIENDO	Ha salido	aforo: 5
+	Dentro: [666G, 999J, 101010K, 121212M]
+	Cola entrada: [131313N FUERA]
+	Cola salida: []
+131313N FUERA esperando...
+111111L SALIENDO	Ha salido	aforo: 4
+	Dentro: [666G, 999J, 101010K, 121212M]
+	Cola entrada: [131313N FUERA]
+	Cola salida: []
+131313N FUERA	Entrando	aforo: 4
+	Dentro: [666G, 999J, 101010K, 121212M]
+	Cola entrada: []
+	Cola salida: []
+131313N ENTRANDO	Ha entrado	aforo: 5
+	Dentro: [666G, 999J, 101010K, 121212M, 131313N]
+	Cola entrada: []
+	Cola salida: []
+141414O FUERA	Entrando	aforo: 5
+	Dentro: [666G, 999J, 101010K, 121212M, 131313N]
+	Cola entrada: []
+	Cola salida: []
+141414O ENTRANDO	Ha entrado	aforo: 6
+	Dentro: [666G, 999J, 101010K, 121212M, 131313N, 141414O]
+	Cola entrada: []
+	Cola salida: []
+999J BAILANDO	Saliendo	aforo: 6
+	Dentro: [666G, 999J, 101010K, 121212M, 131313N, 141414O]
+	Cola entrada: []
+	Cola salida: []
+151515P FUERA esperando...
+999J SALIENDO	Ha salido	aforo: 5
+	Dentro: [666G, 101010K, 121212M, 131313N, 141414O]
+	Cola entrada: [151515P FUERA]
+	Cola salida: []
+151515P FUERA	Entrando	aforo: 5
+	Dentro: [666G, 101010K, 121212M, 131313N, 141414O]
+	Cola entrada: []
+	Cola salida: []
+151515P ENTRANDO	Ha entrado	aforo: 6
+	Dentro: [666G, 101010K, 121212M, 131313N, 141414O, 151515P]
+	Cola entrada: []
+	Cola salida: []
+666G BAILANDO	Saliendo	aforo: 6
+	Dentro: [666G, 101010K, 121212M, 131313N, 141414O, 151515P]
+	Cola entrada: []
+	Cola salida: []
+666G SALIENDO	Ha salido	aforo: 5
+	Dentro: [101010K, 121212M, 131313N, 141414O, 151515P]
+	Cola entrada: []
+	Cola salida: []
+161616Q FUERA	Entrando	aforo: 5
+	Dentro: [101010K, 121212M, 131313N, 141414O, 151515P]
+	Cola entrada: []
+	Cola salida: []
+161616Q ENTRANDO	Ha entrado	aforo: 6
+	Dentro: [101010K, 121212M, 131313N, 141414O, 151515P, 161616Q]
+	Cola entrada: []
+	Cola salida: []
+171717R FUERA	Entrando	aforo: 6
+	Dentro: [101010K, 121212M, 131313N, 141414O, 151515P, 161616Q]
+	Cola entrada: []
+	Cola salida: []
+101010K BAILANDO esperando...
+131313N BAILANDO esperando...
+171717R ENTRANDO	Ha entrado	aforo: 7
+	Dentro: [101010K, 121212M, 131313N, 141414O, 151515P, 161616Q, 171717R]
+	Cola entrada: []
+	Cola salida: [101010K BAILANDO, 131313N BAILANDO]
+101010K BAILANDO	Saliendo	aforo: 7
+	Dentro: [101010K, 121212M, 131313N, 141414O, 151515P, 161616Q, 171717R]
+	Cola entrada: []
+	Cola salida: [131313N BAILANDO]
+131313N BAILANDO	Saliendo	aforo: 7
+	Dentro: [121212M, 131313N, 141414O, 151515P, 161616Q, 171717R]
+	Cola entrada: []
+	Cola salida: []
+131313N SALIENDO	Ha salido	aforo: 6
+	Dentro: [121212M, 141414O, 151515P, 161616Q, 171717R]
+	Cola entrada: []
+	Cola salida: []
+181818S FUERA esperando...
+191919T FUERA esperando...
+101010K SALIENDO	Ha salido	aforo: 5
+	Dentro: [121212M, 141414O, 151515P, 161616Q, 171717R]
+	Cola entrada: [181818S FUERA, 191919T FUERA]
+	Cola salida: []
+181818S FUERA	Entrando	aforo: 5
+	Dentro: [121212M, 141414O, 151515P, 161616Q, 171717R]
+	Cola entrada: [191919T FUERA]
+	Cola salida: []
+191919T FUERA	Entrando	aforo: 6
+	Dentro: [121212M, 141414O, 151515P, 161616Q, 171717R, 181818S]
+	Cola entrada: []
+	Cola salida: []
+171717R BAILANDO esperando...
+161616Q BAILANDO esperando...
+191919T ENTRANDO	Ha entrado	aforo: 7
+	Dentro: [121212M, 141414O, 151515P, 161616Q, 171717R, 181818S, 191919T]
+	Cola entrada: []
+	Cola salida: [171717R BAILANDO, 161616Q BAILANDO]
+171717R BAILANDO esperando...
+161616Q BAILANDO esperando...
+181818S ENTRANDO	Ha entrado	aforo: 7
+	Dentro: [121212M, 141414O, 151515P, 161616Q, 171717R, 181818S, 191919T]
+	Cola entrada: []
+	Cola salida: [171717R BAILANDO, 161616Q BAILANDO]
+171717R BAILANDO	Saliendo	aforo: 7
+	Dentro: [121212M, 141414O, 151515P, 161616Q, 171717R, 181818S, 191919T]
+	Cola entrada: []
+	Cola salida: [161616Q BAILANDO]
+161616Q BAILANDO	Saliendo	aforo: 7
+	Dentro: [121212M, 141414O, 151515P, 161616Q, 181818S, 191919T]
+	Cola entrada: []
+	Cola salida: []
+161616Q SALIENDO	Ha salido	aforo: 6
+	Dentro: [121212M, 141414O, 151515P, 181818S, 191919T]
+	Cola entrada: []
+	Cola salida: []
+171717R SALIENDO	Ha salido	aforo: 5
+	Dentro: [121212M, 141414O, 151515P, 181818S, 191919T]
+	Cola entrada: []
+	Cola salida: []
+202020U FUERA	Entrando	aforo: 5
+	Dentro: [121212M, 141414O, 151515P, 181818S, 191919T]
+	Cola entrada: []
+	Cola salida: []
+202020U ENTRANDO	Ha entrado	aforo: 6
+	Dentro: [121212M, 141414O, 151515P, 181818S, 191919T, 202020U]
+	Cola entrada: []
+	Cola salida: []
+212121V FUERA	Entrando	aforo: 6
+	Dentro: [121212M, 141414O, 151515P, 181818S, 191919T, 202020U]
+	Cola entrada: []
+	Cola salida: []
+181818S BAILANDO esperando...
+222222W FUERA esperando...
+121212M BAILANDO esperando...
+141414O BAILANDO esperando...
+212121V ENTRANDO	Ha entrado	aforo: 7
+	Dentro: [121212M, 141414O, 151515P, 181818S, 191919T, 202020U, 212121V]
+	Cola entrada: [222222W FUERA]
+	Cola salida: [181818S BAILANDO, 121212M BAILANDO, 141414O BAILANDO]
+181818S BAILANDO	Saliendo	aforo: 7
+	Dentro: [121212M, 141414O, 151515P, 181818S, 191919T, 202020U, 212121V]
+	Cola entrada: [222222W FUERA]
+	Cola salida: [121212M BAILANDO, 141414O BAILANDO]
+141414O BAILANDO esperando...
+121212M BAILANDO	Saliendo	aforo: 7
+	Dentro: [121212M, 141414O, 151515P, 191919T, 202020U, 212121V]
+	Cola entrada: [222222W FUERA]
+	Cola salida: [141414O BAILANDO]
+222222W FUERA esperando...
+121212M SALIENDO	Ha salido	aforo: 6
+	Dentro: [141414O, 151515P, 191919T, 202020U, 212121V]
+	Cola entrada: [222222W FUERA]
+	Cola salida: [141414O BAILANDO]
+141414O BAILANDO	Saliendo	aforo: 6
+	Dentro: [141414O, 151515P, 191919T, 202020U, 212121V]
+	Cola entrada: [222222W FUERA]
+	Cola salida: []
+222222W FUERA esperando...
+181818S SALIENDO	Ha salido	aforo: 5
+	Dentro: [151515P, 191919T, 202020U, 212121V]
+	Cola entrada: [222222W FUERA]
+	Cola salida: []
+222222W FUERA esperando...
+232323X FUERA esperando...
+141414O SALIENDO	Ha salido	aforo: 4
+	Dentro: [151515P, 191919T, 202020U, 212121V]
+	Cola entrada: [222222W FUERA, 232323X FUERA]
+	Cola salida: []
+222222W FUERA	Entrando	aforo: 4
+	Dentro: [151515P, 191919T, 202020U, 212121V]
+	Cola entrada: [232323X FUERA]
+	Cola salida: []
+232323X FUERA	Entrando	aforo: 5
+	Dentro: [151515P, 191919T, 202020U, 212121V, 222222W]
+	Cola entrada: []
+	Cola salida: []
+242424Y FUERA	Entrando	aforo: 6
+	Dentro: [151515P, 191919T, 202020U, 212121V, 222222W, 232323X]
+	Cola entrada: []
+	Cola salida: []
+222222W ENTRANDO	Ha entrado	aforo: 7
+	Dentro: [151515P, 191919T, 202020U, 212121V, 222222W, 232323X, 242424Y]
+	Cola entrada: []
+	Cola salida: []
+242424Y ENTRANDO	Ha entrado	aforo: 7
+	Dentro: [151515P, 191919T, 202020U, 212121V, 222222W, 232323X, 242424Y]
+	Cola entrada: []
+	Cola salida: []
+232323X ENTRANDO	Ha entrado	aforo: 7
+	Dentro: [151515P, 191919T, 202020U, 212121V, 222222W, 232323X, 242424Y]
+	Cola entrada: []
+	Cola salida: []
+232323X BAILANDO	Saliendo	aforo: 7
+	Dentro: [151515P, 191919T, 202020U, 212121V, 222222W, 232323X, 242424Y]
+	Cola entrada: []
+	Cola salida: []
+232323X SALIENDO	Ha salido	aforo: 6
+	Dentro: [151515P, 191919T, 202020U, 212121V, 222222W, 242424Y]
+	Cola entrada: []
+	Cola salida: []
+202020U BAILANDO	Saliendo	aforo: 6
+	Dentro: [151515P, 191919T, 202020U, 212121V, 222222W, 242424Y]
+	Cola entrada: []
+	Cola salida: []
+252525Z FUERA esperando...
+202020U SALIENDO	Ha salido	aforo: 5
+	Dentro: [151515P, 191919T, 212121V, 222222W, 242424Y]
+	Cola entrada: [252525Z FUERA]
+	Cola salida: []
+252525Z FUERA	Entrando	aforo: 5
+	Dentro: [151515P, 191919T, 212121V, 222222W, 242424Y]
+	Cola entrada: []
+	Cola salida: []
+252525Z ENTRANDO	Ha entrado	aforo: 6
+	Dentro: [151515P, 191919T, 212121V, 222222W, 242424Y, 252525Z]
+	Cola entrada: []
+	Cola salida: []
+252525Z BAILANDO	Saliendo	aforo: 6
+	Dentro: [151515P, 191919T, 212121V, 222222W, 242424Y, 252525Z]
+	Cola entrada: []
+	Cola salida: []
+151515P BAILANDO	Saliendo	aforo: 6
+	Dentro: [151515P, 191919T, 212121V, 222222W, 242424Y]
+	Cola entrada: []
+	Cola salida: []
+252525Z SALIENDO	Ha salido	aforo: 5
+	Dentro: [191919T, 212121V, 222222W, 242424Y]
+	Cola entrada: []
+	Cola salida: []
+262626A FUERA esperando...
+151515P SALIENDO	Ha salido	aforo: 4
+	Dentro: [191919T, 212121V, 222222W, 242424Y]
+	Cola entrada: [262626A FUERA]
+	Cola salida: []
+262626A FUERA	Entrando	aforo: 4
+	Dentro: [191919T, 212121V, 222222W, 242424Y]
+	Cola entrada: []
+	Cola salida: []
+242424Y BAILANDO esperando...
+272727B FUERA esperando...
+262626A ENTRANDO	Ha entrado	aforo: 5
+	Dentro: [191919T, 212121V, 222222W, 242424Y, 262626A]
+	Cola entrada: [272727B FUERA]
+	Cola salida: [242424Y BAILANDO]
+272727B FUERA esperando...
+242424Y BAILANDO	Saliendo	aforo: 5
+	Dentro: [191919T, 212121V, 222222W, 242424Y, 262626A]
+	Cola entrada: [272727B FUERA]
+	Cola salida: []
+242424Y SALIENDO	Ha salido	aforo: 4
+	Dentro: [191919T, 212121V, 222222W, 262626A]
+	Cola entrada: [272727B FUERA]
+	Cola salida: []
+272727B FUERA	Entrando	aforo: 4
+	Dentro: [191919T, 212121V, 222222W, 262626A]
+	Cola entrada: []
+	Cola salida: []
+282828C FUERA	Entrando	aforo: 5
+	Dentro: [191919T, 212121V, 222222W, 262626A, 272727B]
+	Cola entrada: []
+	Cola salida: []
+272727B ENTRANDO	Ha entrado	aforo: 6
+	Dentro: [191919T, 212121V, 222222W, 262626A, 272727B, 282828C]
+	Cola entrada: []
+	Cola salida: []
+282828C ENTRANDO	Ha entrado	aforo: 6
+	Dentro: [191919T, 212121V, 222222W, 262626A, 272727B, 282828C]
+	Cola entrada: []
+	Cola salida: []
+292929D FUERA	Entrando	aforo: 6
+	Dentro: [191919T, 212121V, 222222W, 262626A, 272727B, 282828C]
+	Cola entrada: []
+	Cola salida: []
+292929D ENTRANDO	Ha entrado	aforo: 7
+	Dentro: [191919T, 212121V, 222222W, 262626A, 272727B, 282828C, 292929D]
+	Cola entrada: []
+	Cola salida: []
+303030E FUERA	Entrando	aforo: 7
+	Dentro: [191919T, 212121V, 222222W, 262626A, 272727B, 282828C, 292929D]
+	Cola entrada: []
+	Cola salida: []
+222222W BAILANDO esperando...
+191919T BAILANDO esperando...
+303030E ENTRANDO	Ha entrado	aforo: 8
+	Dentro: [191919T, 212121V, 222222W, 262626A, 272727B, 282828C, 292929D, 303030E]
+	Cola entrada: []
+	Cola salida: [222222W BAILANDO, 191919T BAILANDO]
+222222W BAILANDO	Saliendo	aforo: 8
+	Dentro: [191919T, 212121V, 222222W, 262626A, 272727B, 282828C, 292929D, 303030E]
+	Cola entrada: []
+	Cola salida: [191919T BAILANDO]
+191919T BAILANDO	Saliendo	aforo: 8
+	Dentro: [191919T, 212121V, 262626A, 272727B, 282828C, 292929D, 303030E]
+	Cola entrada: []
+	Cola salida: []
+222222W SALIENDO	Ha salido	aforo: 7
+	Dentro: [212121V, 262626A, 272727B, 282828C, 292929D, 303030E]
+	Cola entrada: []
+	Cola salida: []
+303030E BAILANDO	Saliendo	aforo: 7
+	Dentro: [212121V, 262626A, 272727B, 282828C, 292929D, 303030E]
+	Cola entrada: []
+	Cola salida: []
+191919T SALIENDO	Ha salido	aforo: 6
+	Dentro: [212121V, 262626A, 272727B, 282828C, 292929D]
+	Cola entrada: []
+	Cola salida: []
+313131F FUERA esperando...
+212121V BAILANDO	Saliendo	aforo: 6
+	Dentro: [212121V, 262626A, 272727B, 282828C, 292929D]
+	Cola entrada: [313131F FUERA]
+	Cola salida: []
+303030E SALIENDO	Ha salido	aforo: 5
+	Dentro: [262626A, 272727B, 282828C, 292929D]
+	Cola entrada: [313131F FUERA]
+	Cola salida: []
+313131F FUERA esperando...
+212121V SALIENDO	Ha salido	aforo: 4
+	Dentro: [262626A, 272727B, 282828C, 292929D]
+	Cola entrada: [313131F FUERA]
+	Cola salida: []
+313131F FUERA	Entrando	aforo: 4
+	Dentro: [262626A, 272727B, 282828C, 292929D]
+	Cola entrada: []
+	Cola salida: []
+313131F ENTRANDO	Ha entrado	aforo: 5
+	Dentro: [262626A, 272727B, 282828C, 292929D, 313131F]
+	Cola entrada: []
+	Cola salida: []
+323232G FUERA	Entrando	aforo: 5
+	Dentro: [262626A, 272727B, 282828C, 292929D, 313131F]
+	Cola entrada: []
+	Cola salida: []
+323232G ENTRANDO	Ha entrado	aforo: 6
+	Dentro: [262626A, 272727B, 282828C, 292929D, 313131F, 323232G]
+	Cola entrada: []
+	Cola salida: []
+333333H FUERA	Entrando	aforo: 6
+	Dentro: [262626A, 272727B, 282828C, 292929D, 313131F, 323232G]
+	Cola entrada: []
+	Cola salida: []
+333333H ENTRANDO	Ha entrado	aforo: 7
+	Dentro: [262626A, 272727B, 282828C, 292929D, 313131F, 323232G, 333333H]
+	Cola entrada: []
+	Cola salida: []
+343434I FUERA	Entrando	aforo: 7
+	Dentro: [262626A, 272727B, 282828C, 292929D, 313131F, 323232G, 333333H]
+	Cola entrada: []
+	Cola salida: []
+323232G BAILANDO esperando...
+262626A BAILANDO esperando...
+282828C BAILANDO esperando...
+343434I ENTRANDO	Ha entrado	aforo: 8
+	Dentro: [262626A, 272727B, 282828C, 292929D, 313131F, 323232G, 333333H, 343434I]
+	Cola entrada: []
+	Cola salida: [323232G BAILANDO, 262626A BAILANDO, 282828C BAILANDO]
+282828C BAILANDO esperando...
+323232G BAILANDO	Saliendo	aforo: 8
+	Dentro: [262626A, 272727B, 282828C, 292929D, 313131F, 323232G, 333333H, 343434I]
+	Cola entrada: []
+	Cola salida: [262626A BAILANDO, 282828C BAILANDO]
+262626A BAILANDO	Saliendo	aforo: 8
+	Dentro: [262626A, 272727B, 282828C, 292929D, 313131F, 333333H, 343434I]
+	Cola entrada: []
+	Cola salida: [282828C BAILANDO]
+262626A SALIENDO	Ha salido	aforo: 7
+	Dentro: [272727B, 282828C, 292929D, 313131F, 333333H, 343434I]
+	Cola entrada: []
+	Cola salida: [282828C BAILANDO]
+282828C BAILANDO	Saliendo	aforo: 7
+	Dentro: [272727B, 282828C, 292929D, 313131F, 333333H, 343434I]
+	Cola entrada: []
+	Cola salida: []
+292929D BAILANDO	Saliendo	aforo: 7
+	Dentro: [272727B, 292929D, 313131F, 333333H, 343434I]
+	Cola entrada: []
+	Cola salida: []
+353535J FUERA esperando...
+282828C SALIENDO	Ha salido	aforo: 6
+	Dentro: [272727B, 313131F, 333333H, 343434I]
+	Cola entrada: [353535J FUERA]
+	Cola salida: []
+353535J FUERA esperando...
+323232G SALIENDO	Ha salido	aforo: 5
+	Dentro: [272727B, 313131F, 333333H, 343434I]
+	Cola entrada: [353535J FUERA]
+	Cola salida: []
+353535J FUERA esperando...
+292929D SALIENDO	Ha salido	aforo: 4
+	Dentro: [272727B, 313131F, 333333H, 343434I]
+	Cola entrada: [353535J FUERA]
+	Cola salida: []
+353535J FUERA	Entrando	aforo: 4
+	Dentro: [272727B, 313131F, 333333H, 343434I]
+	Cola entrada: []
+	Cola salida: []
+353535J ENTRANDO	Ha entrado	aforo: 5
+	Dentro: [272727B, 313131F, 333333H, 343434I, 353535J]
+	Cola entrada: []
+	Cola salida: []
+272727B BAILANDO	Saliendo	aforo: 5
+	Dentro: [272727B, 313131F, 333333H, 343434I, 353535J]
+	Cola entrada: []
+	Cola salida: []
+363636K FUERA esperando...
+272727B SALIENDO	Ha salido	aforo: 4
+	Dentro: [313131F, 333333H, 343434I, 353535J]
+	Cola entrada: [363636K FUERA]
+	Cola salida: []
+363636K FUERA	Entrando	aforo: 4
+	Dentro: [313131F, 333333H, 343434I, 353535J]
+	Cola entrada: []
+	Cola salida: []
+333333H BAILANDO esperando...
+343434I BAILANDO esperando...
+353535J BAILANDO esperando...
+363636K ENTRANDO	Ha entrado	aforo: 5
+	Dentro: [313131F, 333333H, 343434I, 353535J, 363636K]
+	Cola entrada: []
+	Cola salida: [333333H BAILANDO, 343434I BAILANDO, 353535J BAILANDO]
+333333H BAILANDO	Saliendo	aforo: 5
+	Dentro: [313131F, 333333H, 343434I, 353535J, 363636K]
+	Cola entrada: []
+	Cola salida: [343434I BAILANDO, 353535J BAILANDO]
+343434I BAILANDO	Saliendo	aforo: 5
+	Dentro: [313131F, 343434I, 353535J, 363636K]
+	Cola entrada: []
+	Cola salida: [353535J BAILANDO]
+353535J BAILANDO esperando...
+333333H SALIENDO	Ha salido	aforo: 4
+	Dentro: [313131F, 353535J, 363636K]
+	Cola entrada: []
+	Cola salida: [353535J BAILANDO]
+353535J BAILANDO	Saliendo	aforo: 4
+	Dentro: [313131F, 353535J, 363636K]
+	Cola entrada: []
+	Cola salida: []
+343434I SALIENDO	Ha salido	aforo: 3
+	Dentro: [313131F, 363636K]
+	Cola entrada: []
+	Cola salida: []
+353535J SALIENDO	Ha salido	aforo: 2
+	Dentro: [313131F, 363636K]
+	Cola entrada: []
+	Cola salida: []
+373737L FUERA	Entrando	aforo: 2
+	Dentro: [313131F, 363636K]
+	Cola entrada: []
+	Cola salida: []
+363636K BAILANDO esperando...
+373737L ENTRANDO	Ha entrado	aforo: 3
+	Dentro: [313131F, 363636K, 373737L]
+	Cola entrada: []
+	Cola salida: [363636K BAILANDO]
+363636K BAILANDO	Saliendo	aforo: 3
+	Dentro: [313131F, 363636K, 373737L]
+	Cola entrada: []
+	Cola salida: []
+383838M FUERA esperando...
+363636K SALIENDO	Ha salido	aforo: 2
+	Dentro: [313131F, 373737L]
+	Cola entrada: [383838M FUERA]
+	Cola salida: []
+383838M FUERA	Entrando	aforo: 2
+	Dentro: [313131F, 373737L]
+	Cola entrada: []
+	Cola salida: []
+393939N FUERA	Entrando	aforo: 3
+	Dentro: [313131F, 373737L, 383838M]
+	Cola entrada: []
+	Cola salida: []
+373737L BAILANDO esperando...
+393939N ENTRANDO	Ha entrado	aforo: 4
+	Dentro: [313131F, 373737L, 383838M, 393939N]
+	Cola entrada: []
+	Cola salida: [373737L BAILANDO]
+373737L BAILANDO esperando...
+383838M ENTRANDO	Ha entrado	aforo: 4
+	Dentro: [313131F, 373737L, 383838M, 393939N]
+	Cola entrada: []
+	Cola salida: [373737L BAILANDO]
+373737L BAILANDO	Saliendo	aforo: 4
+	Dentro: [313131F, 373737L, 383838M, 393939N]
+	Cola entrada: []
+	Cola salida: []
+313131F BAILANDO	Saliendo	aforo: 4
+	Dentro: [313131F, 383838M, 393939N]
+	Cola entrada: []
+	Cola salida: []
+404040O FUERA esperando...
+414141P FUERA esperando...
+373737L SALIENDO	Ha salido	aforo: 3
+	Dentro: [383838M, 393939N]
+	Cola entrada: [404040O FUERA, 414141P FUERA]
+	Cola salida: []
+404040O FUERA esperando...
+414141P FUERA esperando...
+313131F SALIENDO	Ha salido	aforo: 2
+	Dentro: [383838M, 393939N]
+	Cola entrada: [404040O FUERA, 414141P FUERA]
+	Cola salida: []
+404040O FUERA	Entrando	aforo: 2
+	Dentro: [383838M, 393939N]
+	Cola entrada: [414141P FUERA]
+	Cola salida: []
+414141P FUERA	Entrando	aforo: 3
+	Dentro: [383838M, 393939N, 404040O]
+	Cola entrada: []
+	Cola salida: []
+404040O ENTRANDO	Ha entrado	aforo: 4
+	Dentro: [383838M, 393939N, 404040O, 414141P]
+	Cola entrada: []
+	Cola salida: []
+414141P ENTRANDO	Ha entrado	aforo: 4
+	Dentro: [383838M, 393939N, 404040O, 414141P]
+	Cola entrada: []
+	Cola salida: []
+424242Q FUERA	Entrando	aforo: 4
+	Dentro: [383838M, 393939N, 404040O, 414141P]
+	Cola entrada: []
+	Cola salida: []
+424242Q ENTRANDO	Ha entrado	aforo: 5
+	Dentro: [383838M, 393939N, 404040O, 414141P, 424242Q]
+	Cola entrada: []
+	Cola salida: []
+434343R FUERA	Entrando	aforo: 5
+	Dentro: [383838M, 393939N, 404040O, 414141P, 424242Q]
+	Cola entrada: []
+	Cola salida: []
+434343R ENTRANDO	Ha entrado	aforo: 6
+	Dentro: [383838M, 393939N, 404040O, 414141P, 424242Q, 434343R]
+	Cola entrada: []
+	Cola salida: []
+424242Q BAILANDO	Saliendo	aforo: 6
+	Dentro: [383838M, 393939N, 404040O, 414141P, 424242Q, 434343R]
+	Cola entrada: []
+	Cola salida: []
+424242Q SALIENDO	Ha salido	aforo: 5
+	Dentro: [383838M, 393939N, 404040O, 414141P, 434343R]
+	Cola entrada: []
+	Cola salida: []
+444444S FUERA	Entrando	aforo: 5
+	Dentro: [383838M, 393939N, 404040O, 414141P, 434343R]
+	Cola entrada: []
+	Cola salida: []
+444444S ENTRANDO	Ha entrado	aforo: 6
+	Dentro: [383838M, 393939N, 404040O, 414141P, 434343R, 444444S]
+	Cola entrada: []
+	Cola salida: []
+454545T FUERA	Entrando	aforo: 6
+	Dentro: [383838M, 393939N, 404040O, 414141P, 434343R, 444444S]
+	Cola entrada: []
+	Cola salida: []
+464646U FUERA	Entrando	aforo: 7
+	Dentro: [383838M, 393939N, 404040O, 414141P, 434343R, 444444S, 454545T]
+	Cola entrada: []
+	Cola salida: []
+454545T ENTRANDO	Ha entrado	aforo: 8
+	Dentro: [383838M, 393939N, 404040O, 414141P, 434343R, 444444S, 454545T, 464646U]
+	Cola entrada: []
+	Cola salida: []
+474747V FUERA	Entrando	aforo: 8
+	Dentro: [383838M, 393939N, 404040O, 414141P, 434343R, 444444S, 454545T, 464646U]
+	Cola entrada: []
+	Cola salida: []
+474747V ENTRANDO	Ha entrado	aforo: 9
+	Dentro: [383838M, 393939N, 404040O, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V]
+	Cola entrada: []
+	Cola salida: []
+464646U ENTRANDO	Ha entrado	aforo: 9
+	Dentro: [383838M, 393939N, 404040O, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V]
+	Cola entrada: []
+	Cola salida: []
+404040O BAILANDO	Saliendo	aforo: 9
+	Dentro: [383838M, 393939N, 404040O, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V]
+	Cola entrada: []
+	Cola salida: []
+404040O SALIENDO	Ha salido	aforo: 8
+	Dentro: [383838M, 393939N, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V]
+	Cola entrada: []
+	Cola salida: []
+484848W FUERA	Entrando	aforo: 8
+	Dentro: [383838M, 393939N, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V]
+	Cola entrada: []
+	Cola salida: []
+494949X FUERA	Entrando	aforo: 9
+	Dentro: [383838M, 393939N, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V, 484848W]
+	Cola entrada: []
+	Cola salida: []
+484848W ENTRANDO	Ha entrado	aforo: 10
+	Dentro: [383838M, 393939N, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V, 484848W, 494949X]
+	Cola entrada: []
+	Cola salida: []
+494949X ENTRANDO	Ha entrado	aforo: 10
+	Dentro: [383838M, 393939N, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V, 484848W, 494949X]
+	Cola entrada: []
+	Cola salida: []
+494949X BAILANDO	Saliendo	aforo: 10
+	Dentro: [383838M, 393939N, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V, 484848W, 494949X]
+	Cola entrada: []
+	Cola salida: []
+383838M BAILANDO	Saliendo	aforo: 10
+	Dentro: [383838M, 393939N, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V, 484848W]
+	Cola entrada: []
+	Cola salida: []
+494949X SALIENDO	Ha salido	aforo: 9
+	Dentro: [393939N, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V, 484848W]
+	Cola entrada: []
+	Cola salida: []
+383838M SALIENDO	Ha salido	aforo: 8
+	Dentro: [393939N, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V, 484848W]
+	Cola entrada: []
+	Cola salida: []
+484848W BAILANDO	Saliendo	aforo: 8
+	Dentro: [393939N, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V, 484848W]
+	Cola entrada: []
+	Cola salida: []
+393939N BAILANDO	Saliendo	aforo: 8
+	Dentro: [393939N, 414141P, 434343R, 444444S, 454545T, 464646U, 474747V]
+	Cola entrada: []
+	Cola salida: []
+393939N SALIENDO	Ha salido	aforo: 7
+	Dentro: [414141P, 434343R, 444444S, 454545T, 464646U, 474747V]
+	Cola entrada: []
+	Cola salida: []
+484848W SALIENDO	Ha salido	aforo: 6
+	Dentro: [414141P, 434343R, 444444S, 454545T, 464646U, 474747V]
+	Cola entrada: []
+	Cola salida: []
+454545T BAILANDO	Saliendo	aforo: 6
+	Dentro: [414141P, 434343R, 444444S, 454545T, 464646U, 474747V]
+	Cola entrada: []
+	Cola salida: []
+454545T SALIENDO	Ha salido	aforo: 5
+	Dentro: [414141P, 434343R, 444444S, 464646U, 474747V]
+	Cola entrada: []
+	Cola salida: []
+414141P BAILANDO	Saliendo	aforo: 5
+	Dentro: [414141P, 434343R, 444444S, 464646U, 474747V]
+	Cola entrada: []
+	Cola salida: []
+474747V BAILANDO	Saliendo	aforo: 5
+	Dentro: [434343R, 444444S, 464646U, 474747V]
+	Cola entrada: []
+	Cola salida: []
+474747V SALIENDO	Ha salido	aforo: 4
+	Dentro: [434343R, 444444S, 464646U]
+	Cola entrada: []
+	Cola salida: []
+414141P SALIENDO	Ha salido	aforo: 3
+	Dentro: [434343R, 444444S, 464646U]
+	Cola entrada: []
+	Cola salida: []
+434343R BAILANDO	Saliendo	aforo: 3
+	Dentro: [434343R, 444444S, 464646U]
+	Cola entrada: []
+	Cola salida: []
+434343R SALIENDO	Ha salido	aforo: 2
+	Dentro: [444444S, 464646U]
+	Cola entrada: []
+	Cola salida: []
+464646U BAILANDO	Saliendo	aforo: 2
+	Dentro: [444444S, 464646U]
+	Cola entrada: []
+	Cola salida: []
+464646U SALIENDO	Ha salido	aforo: 1
+	Dentro: [444444S]
+	Cola entrada: []
+	Cola salida: []
+444444S BAILANDO	Saliendo	aforo: 1
+	Dentro: [444444S]
+	Cola entrada: []
+	Cola salida: []
+444444S SALIENDO	Ha salido	aforo: 0
+	Dentro: []
+	Cola entrada: []
+	Cola salida: []
+
+	
+	
+	
+# NOTA: las líneas terminadas en "esperando..." son por la salida de error
